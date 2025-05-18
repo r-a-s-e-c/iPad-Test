@@ -10,17 +10,17 @@ def print_message(*args):
 
 touch_area = document.querySelector("#touch-area")
 status_display = document.querySelector("#status")
-#start_x = 0
-#start_y = 0
+start_x = 0
+start_y = 0
 
 def touch_start(event):
-    nonlocal start_x, start_y
+    global start_x, start_y
     status_display.innerText = "Touch started"
     start_x = event.touches[0].clientX
     start_y = event.touches[0].clientY
 
 def touch_end(event):
-    nonlocal start_x, start_y
+    global start_x, start_y
     status_display.innerText = "Touch ended"
     end_x = event.changedTouches[0].clientX
     end_y = event.changedTouches[0].clientY
