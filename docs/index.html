@@ -13,7 +13,13 @@
  
          <!-- for splashscreen -->
          <style>
-             #loading { outline: none; border: none; background: transparent }
+            #loading { outline: none; border: none; background: transparent }
+            #touch-area {
+                 width: 200px;
+                 height: 200px;
+                 background-color: lightblue;
+                 margin-bottom: 10px;
+             }
          </style>
          <script type="module">
              const loading = document.getElementById('loading');
@@ -39,6 +45,8 @@
  
          <section class="pyscript">
              <button py-click="print_message">Click Me</button>
+             <div id="touch-area">Touch here</div>
+             <p>Status: <span id="status"></span></p>
              Hello world! <br />
              This is the current date and time, as computed by Python:
              <div id="resultdiv"></div>
