@@ -10,8 +10,8 @@ def print_message(*args):
 
 touch_area = document.querySelector("#touch-area")
 status_display = document.querySelector("#status")
-start_x = 0
-start_y = 0
+#start_x = 0
+#start_y = 0
 
 def touch_start(event):
     nonlocal start_x, start_y
